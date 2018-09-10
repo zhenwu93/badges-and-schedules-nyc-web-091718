@@ -2,14 +2,15 @@ def badge_maker(name)
   "Hello, my name is #{name}."
 end
 
-def batch_badge_creator(names)
-  for i in names do
-    name = names[i]
-  end
+def batch_badge_creator(attendees)
+  attendees.collect do |name|
   badge_maker(name)
 end
 
 def assign_rooms(speakers)
+  for counter in 1..7 do
+
+  end
 end
 
 def printer
