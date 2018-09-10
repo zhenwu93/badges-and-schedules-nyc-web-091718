@@ -11,8 +11,10 @@ end
 
 
 def assign_rooms(speakers)
-  for counter in 1..7 do
-
+  room = 0
+  attendees.collect do |name|
+    room += 1
+    "Hello, #{name}! You'll be assigned to room #{room}!"
   end
 end
 
